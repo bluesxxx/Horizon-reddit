@@ -12,7 +12,7 @@ https://reddit.77666677.xyz/r/logistics/hot/.rss
 https://reddit.77666677.xyz/r/importing/hot/.rss
 https://reddit.77666677.xyz/r/supplychain/hot/.rss
 https://reddit.77666677.xyz/r/AliBaba/hot/.rss
-https://reddit.77666677.xyz/r/customs/hot/.rss
+https://reddit.77666677.xyz/r/CustomsBroker/hot/.rss
 https://reddit.77666677.xyz/r/FulfillmentByAmazon/hot/.rss
 https://reddit.77666677.xyz/r/ecommerce/hot/.rss
 ```
