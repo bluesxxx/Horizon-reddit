@@ -1,1 +1,69 @@
-IyBSU1MgQ2FjaGUgRmV0Y2hlciDigJQg5q+PIDIg5bCP5pe25omn6KGMCgrmr48gMiDlsI/ml7bmipPlj5YgOCDkuKogc3VicmVkZGl0IOeahCBSZWRkaXQgUlNTIOeDreW4lu+8jOino+aekOS4uiBKU09OIOW5tue8k+WtmOWIsOacrOWcsOOAguiuvuiuoeebruagh++8muWNs+S9vyA5OjAwIFZQTiDmlq3lvIDvvIzkuZ/og73kvb/nlKgg4omkMmgg5YmN55qE57yT5a2Y5pWw5o2u55Sf5oiQ5pel5oql44CCCgojIyBTdGVwIDE6IOaLieWPliA4IOS4qiBzdWJyZWRkaXQgUlNTCgrnlKggYHdlYl9mZXRjaGDvvIh0aW1lb3V0PTE1c++8ieS+neasoeaKk+WPluS7peS4iyBVUkzjgILmr4/kuKror7fmsYLliqAgSFRUUCDlpLQgYFVzZXItQWdlbnQ6IE1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQpIEFwcGxlV2ViS2l0LzUzNy4zNiBDaHJvbWUvMTIwLjBg44CC55u46YK76K+35rGC562JIDRz44CCCgpgYGAKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2ZyZWlnaHRmb3J3YXJkaW5nL2hvdC8ucnNzCmh0dHBzOi8vd3d3LnJlZGRpdC5jb20vci9sb2dpc3RpY3MvaG90Ly5yc3MKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2ltcG9ydGluZy9ob3QvLnJzcwpodHRwczovL3d3dy5yZWRkaXQuY29tL3Ivc3VwcGx5Y2hhaW4vaG90Ly5yc3MKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL0FsaUJhYmEvaG90Ly5yc3MKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2N1c3RvbXMvaG90Ly5yc3MKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL0Z1bGZpbGxtZW50QnlBbWF6b24vaG90Ly5yc3MKaHR0cHM6Ly93d3cucmVkZGl0LmNvbS9yL2Vjb21tZXJjZS9ob3QvLnJzcwpgYGAKCuWmguaenOWNlea6kOi2heaXtuaIliA0MjnvvJrnrYkgMTJzIOWQjumHjeivleacgOWkmiAyIOasoeOAguS7jeWksei0peWImei3s+i/h+ivpSBzdWLjgIIKCiMjIFN0ZXAgMjog6Kej5p6QIFhNTCDkuLogSlNPTiDmlbDnu4QKCuWvueavj+S4qiBSU1MgWE1M77yM5o+Q5Y+WIGA8ZW50cnk+YCDmoIfnrb7lhoXnmoTvvJoKLSBgPHRpdGxlPmAg4oaSIHRpdGxlCi0gYDxsaW5rIGhyZWY9Ii4uLiI+YCDihpIgbGluawotIGA8dXBkYXRlZD5gIOaIliBgPHB1YkRhdGU+YCDihpIgcHViRGF0ZQotIGA8Y2F0ZWdvcnkgdGVybT0iLi4uIj5g77yI5Y+v6IO95pyJ5aSa5Liq77yJ4oaSIHRhZ3NbXQoK6L6T5Ye65qC85byP77yaYFt7IHRpdGxlLCBsaW5rLCBwdWJEYXRlLCB0YWdzOiBbXSB9LCAuLi5dYAoKIyMgU3RlcCAzOiDlkIjlubbljrvph40gKyDov4fmu6QKCuWvueavj+S4qiBzdWJyZWRkaXTvvJoKMS4g6K+75Y+W546w5pyJ57yT5a2YIGBEOlxIb3Jpem9uXGRhdGFcY2FjaGVce3N1YnJlZGRpdH0uanNvbmDvvIjkuI3lrZjlnKjliJnkuLogYFtdYO+8iQoyLiDmlrDmlbDmja7mjIkgbGluayDljrvph43lkI7lkIjlubbliLDmlbDnu4TlpLTpg6jvvIjmnIDmlrDlnKjliY3vvIkKMy4g6L+H5ruk5o6JIHB1YkRhdGUg5pep5LqOIDcyIOWwj+aXtueahOadoeebru+8iOS/neeVmeacgOi/kSAzIOWkqe+8iQo0LiDmr4/kuKogc3VicmVkZGl0IOe8k+WtmOS4iumZkCAyMDAg5p2h77yI5pen5p2h55uu6Ieq5Yqo6KOB5o6J77yJCjUuIOWGmeWbniBgRDpcSG9yaXpvblxkYXRhXGNhY2hlXHtzdWJyZWRkaXR9Lmpzb25gCgojIyBTdGVwIDQ6IOabtOaWsCBtYW5pZmVzdAoK5YaZ5a6MIDgg5Liq5paH5Lu25ZCO77yM5aSN5YaZIGBEOlxIb3Jpem9uXGRhdGFcY2FjaGVcbWFuaWZlc3QuanNvbmDvvJoKYGBganNvbgp7CiAgImxhc3RfZmV0Y2giOiAiMjAyNi0wOS0wMVQxNTowMDowMCswODowMCIsCiAgInRvdGFsX29uY2UiOiAxODcsCiAgImNvdW50cyI6IHsKICAgICJmcmVpZ2h0Zm9yd2FyZGluZyI6IDI1LAogICAgImxvZ2lzdGljcyI6IDI1LAogICAgLi4uCiAgfQp9CmBgYAoKIyMgU3RlcCA1OiDmiqXlkYoKCuWcqOacgOe7iOWbnuWkjeS4reaKpeWRiu+8muS4iue6v+aXtumXtOOAgeWQhCBzdWIg57yT5a2Y5p2h5pWw44CB5paw5aKe5p2h5pWw44CC5aaC5p6c5pyJIHN1YiDmlbTkvZPlpLHotKXvvIjlhaggMyDmrKEgcmV0cnkg6YO9IGZhaWzvvInvvIzkuZ/ms6jmmI7jgIIKCiMjIOWFs+mUrue6puadnwoKLSDmiYDmnInot6/lvoTkvb/nlKggYEQ6XEhvcml6b25cZGF0YVxjYWNoZVxgIOe7neWvuei3r+W+hAotIEpTT04g5paH5Lu2IFVURi04IOe8lueggeOAgXByZXR0eSBwcmludO+8iGluZGVudD0y77yJCi0g5aaC5p6c5YWo6YOoIDgg5LiqIHN1YiDpg73lpLHotKXvvIjnvZHnu5zpl67popjvvInvvIzmiqXlkYrlpLHotKXljp/lm6DvvIzkuI3kv67mlLkgbWFuaWZlc3QKLSDmnaXmupDpk77mjqXkv53mjIEgUmVkZGl0IOWOn+WniyBVUkzvvIhodHRwczovL3d3dy5yZWRkaXQuY29tL3IvLi4uL2NvbW1lbnRzL1hYWC8uLi7vvIkK
+# RSS Cache Fetcher — 每 2 小时执行
+
+每 2 小时抓取 8 个 subreddit 的 Reddit RSS 热帖，解析为 JSON 并缓存到本地。设计目标：即使 9:00 VPN 断开，也能使用 ≤2h 前的缓存数据生成日报。
+
+## Step 1: 拉取 8 个 subreddit RSS
+
+用 `web_fetch`（timeout=15s）依次抓取以下 URL（**走 Cloudflare Worker 反代**，因为国内网络封锁 reddit.com，直连必失败）。相邻请求等 4s。
+
+```
+https://reddit.77666677.xyz/r/freightforwarding/hot/.rss
+https://reddit.77666677.xyz/r/logistics/hot/.rss
+https://reddit.77666677.xyz/r/importing/hot/.rss
+https://reddit.77666677.xyz/r/supplychain/hot/.rss
+https://reddit.77666677.xyz/r/AliBaba/hot/.rss
+https://reddit.77666677.xyz/r/customs/hot/.rss
+https://reddit.77666677.xyz/r/FulfillmentByAmazon/hot/.rss
+https://reddit.77666677.xyz/r/ecommerce/hot/.rss
+```
+
+反代说明：Worker（reddit-rss-proxy）已在海外节点请求 Reddit 并伪装浏览器 UA，无需再自定义请求头。返回的仍是 Reddit 原始 Atom XML 格式，Step 2 解析逻辑不变。
+
+如果单源超时、429 或 502（Worker 上游失败）：等 12s 后重试最多 2 次。仍失败则跳过该 sub。
+
+**禁止直连 reddit.com 或其镜像**（r.jina.ai、rsshub 等均被封锁），只使用上述反代地址。
+
+## Step 2: 解析 XML 为 JSON 数组
+
+对每个 RSS XML，提取 `<entry>` 标签内的：
+- `<title>` → title
+- `<link href="...">` → link
+- `<updated>` 或 `<pubDate>` → pubDate
+- `<category term="...">`（可能有多个）→ tags[]
+
+输出格式：`[{ title, link, pubDate, tags: [] }, ...]`
+
+## Step 3: 合并去重 + 过滤
+
+对每个 subreddit：
+1. 读取现有缓存 `D:\Horizon\data\cache\{subreddit}.json`（不存在则为 `[]`）
+2. 新数据按 link 去重后合并到数组头部（最新在前）
+3. 过滤掉 pubDate 早于 72 小时的条目（保留最近 3 天）
+4. 每个 subreddit 缓存上限 200 条（旧条目自动裁掉）
+5. 写回 `D:\Horizon\data\cache\{subreddit}.json`
+
+## Step 4: 更新 manifest
+
+写完 8 个文件后，复写 `D:\Horizon\data\cache\manifest.json`：
+```json
+{
+  "last_fetch": "2026-09-01T15:00:00+08:00",
+  "total_once": 187,
+  "counts": {
+    "freightforwarding": 25,
+    "logistics": 25,
+    ...
+  }
+}
+```
+
+## Step 5: 报告
+
+在最终回复中报告：上线时间、各 sub 缓存条数、新增条数。如果有 sub 整体失败（全 3 次 retry 都 fail），也注明。
+
+## 关键约束
+
+- 所有路径使用 `D:\Horizon\data\cache\` 绝对路径
+- JSON 文件 UTF-8 编码、pretty print（indent=2）
+- 如果全部 8 个 sub 都失败（网络问题），报告失败原因，不修改 manifest
+- 来源链接保持 Reddit 原始 URL（https://www.reddit.com/r/.../comments/XXX/...）
