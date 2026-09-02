@@ -1,6 +1,6 @@
-# RSS Cache Fetcher — 每 2 小时执行
+# RSS Cache Fetcher — 每天 22:00 执行
 
-每 2 小时抓取 8 个 subreddit 的 Reddit RSS 热帖，解析为 JSON 并缓存到本地。设计目标：即使 9:00 VPN 断开，也能使用 ≤2h 前的缓存数据生成日报。
+每天 22:00 抓取 8 个 subreddit 的 Reddit RSS 热帖，解析为 JSON 并缓存到本地。设计目标：即使 VPN 断开，也能使用 ≤24h 前的缓存数据生成日报（9:00 日报任务自带实时抓取，本地缓存仅作第三道兜底）。
 
 ## Step 1: 拉取 8 个 subreddit RSS
 
