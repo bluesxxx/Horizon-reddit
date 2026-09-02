@@ -106,8 +106,8 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 - **9-10 Actionable Alert**: IMMEDIATE 合规风险、重大政策执法、系统性中断、可立即软推的明确求助帖
 - **7-8 High Value**: 具体运营洞察、新法规+时间表、显著费率变化、实战案例研究、高价值用户提问
 - **5-6 Tactical Intel**: 实用技巧、延误轶事、付款纠纷解决、承运商表现数据点
-- **3-4 General Awareness**（通常不推送，但带 [QUESTION] 标签的可保留）
-- **0-2 Noise**: 消费者问题、纯推广、无证据观点
+- **3-4 General Awareness**（不进主区；通过相关性门的进入低分展示区，见 Step 3）
+- **0-2 Noise**: 消费者问题、纯推广、无证据观点（直接丢弃，任何区域都不展示）
 
 **标签集合（每条 3-5 个）：** customs-compliance, freight-forwarding, shipping-lines, documentation, supplier-issues, regulatory-change, payment-disruption, warehousing, carrier-reliability, sourcing-strategy, product-compliance, trade-policy, user-question
 
@@ -117,7 +117,18 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 
 ## Step 3: AI 评分筛选 + 链接
 
-对每条帖子按上述标准评估。保留 >= 5/10 的帖子，加上 4 分但有 `user-question` 标签的帖子。按分数降序排列。同链接去重。
+对每条帖子先做相关性门（二值判断：属于"推送"清单主题且不在"不推送"清单），再按分数分两区输出：
+
+**主区（正常卡片）：**
+- 保留 >= 5/10 的帖子，加上 4 分但有 `user-question` 标签的帖子
+- 按分数降序排列
+
+**低分展示区（折叠区，紧凑行）：**
+- 通过相关性门但 3 <= 分数 < 5 的帖子（低分但主题相关的，不再静默丢弃）
+- 已进主区的帖子（含 4 分提问帖）不在此区重复
+- 按分数降序排列，每条给一句话中文说明（为何相关但低分）
+
+**两区共同规则：** 同链接去重（跨数据源合并时以 pubDate 较新者为准）；0-2 分 Noise 与"不推送"主题在任何区域都不展示。
 
 **每条必须有可点击来源 URL：**
 - Reddit 帖子 → `https://www.reddit.com/r/...` 完整链接
@@ -133,8 +144,8 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 ### Design System
 - 字体：`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`
 - Header：蓝色渐变 (#1565c0 → #0d47a1)，白色文字，圆角 12px
-- Header 内容：标题 "🚢 海关货运日报" + 日期 (YYYY年M月D日)，副标题"CatPaw AI 评分 · 阈值 ≥5/10"
-- Stats bar：5 个统计数字（总条目 / Actionable / High / Tactical / 用户提问）
+- Header 内容：标题 "🚢 海关货运日报" + 日期 (YYYY年M月D日)，副标题"CatPaw AI 评分 · 主区 ≥5/10 · 低分区 3-4（折叠）"
+- Stats bar：6 个统计数字（总条目 / Actionable / High / Tactical / 用户提问 / 低分相关）
 - 卡片左边框色：>=8 → 红色(#c62828)，>=6 → 橙色(#e65100)，>=5 → 蓝色(#1565d2)
 - **标题必须可点击** `<a href="URL" target="_blank">Post Title</a>`
 - 用户提问帖加 `[提问]` 徽标，标记为可软推触点
@@ -153,6 +164,25 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 </div>
 ```
 
+### 低分展示区（主区卡片之后）
+
+```html
+<details class="low">
+  <summary>低分相关帖（N 条 · 评分 3-4 · 默认折叠）</summary>
+  <div class="lowrow">
+    <span class="lsc">4</span>
+    <a href="REDDIT_URL" target="_blank">Post Title (English)</a>
+    <span class="ltag">r/{subreddit}</span>
+    <span class="lsum">一句话中文说明：为何相关但只值 3-4 分（如"话题相关但缺具体数字/主体，属泛泛讨论"）</span>
+  </div>
+  <!-- 每条一行，按分数降序 -->
+</details>
+```
+
+- 低分区用灰色左边框/灰色分数 (#9e9e9e)，行内紧凑样式，不占用主区视觉权重
+- 每条同样必须有可点击链接；无链接的条目直接丢弃
+- 低分区为空时不渲染 `<details>`，也不在 Stats bar 占位
+
 ### 页面底部
 - 报告由 CatPaw AI (longcat) 评筛
 - 下次更新: 次日 09:00 CST
@@ -168,6 +198,7 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 2. 在最终回复中报告：
    - 数据来源 + 总条数 + 去重后条数
    - >= 5 分 N 条（Actionable X / High Y / Tactical Z / 用户提问 W）
+   - 低分区 M 条（3-4 分相关帖）
    - 报告文件路径
    - 如果 0 条，分析原因
 
