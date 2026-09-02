@@ -69,10 +69,10 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 
 ### 1E: 本地缓存兜底（最重要的新增）
 
-作为 RSS 优先、搜索降级之后的第三道防线，当实时抓取和搜索引擎**都**失败时，使用每 2 小时缓存任务写入的本地 JSON 缓存：
+作为 RSS 优先、搜索降级之后的第三道防线，当实时抓取和搜索引擎**都**失败时，使用每天 22:00 缓存任务写入的本地 JSON 缓存：
 
 1. 读取 `D:\Horizon\data\cache\manifest.json` 检查缓存时效
-2. 如果 manifest 的 `last_fetch` 距今 ≤ 6 小时 → 缓存可用
+2. 如果 manifest 的 `last_fetch` 距今 ≤ 24 小时（上一次 22:00 抓取）→ 缓存可用
 3. 依次读取 `D:\Horizon\data\cache/{subreddit}.json`（8 个文件）
 4. 合并所有缓存条目作为实时抓取结果的替代，继续执行 Step 3 评分筛选
 5. 在报告中注明"数据源: 本地缓存（最近一次抓取 HH:MM，XX 条）"
@@ -84,7 +84,7 @@ web_search("Panama Canal Red Sea route disruption schedule 2026")
 - 在报告 note 区域注明使用缓存而非实时抓取
 
 **评估缓存时效：**
-- 缓存距今 > 6 小时且实时抓取全部失败 → 在报告中提示"⚠️ 使用陈旧缓存（> 6h），建议检查反代状态"
+- 缓存距今 > 24 小时且实时抓取全部失败 → 在报告中提示"⚠️ 使用陈旧缓存（> 24h），建议检查反代状态"
 
 ---
 
